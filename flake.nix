@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: Unlicense
 {
   inputs = {
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     # Support a particular subset of the Nix systems
-    # systems.url = "github:nix-systems/default";
+    systems.url = "github:nix-systems/default";
   };
 
   outputs =
@@ -19,7 +19,7 @@
       devShells = eachSystem (pkgs: {
         default = pkgs.mkShell {
           packages = [
-            pkgs.nodejs
+            pkgs.nodejs_23
 
             # Alternatively, you can use a specific major version of Node.js
 
