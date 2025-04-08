@@ -1,8 +1,8 @@
-# Capstone Project: Decentralized Messaging Application
+# LeJournal
 
 ## Overview
 
-This project aims to create a decentralized messaging application using blockchain technology, focusing on secure and private communication. The application uses blockchain wallets for identity verification through Public Key Infrastructure (PKI) and prioritizes the optimization of gas fees for scalability and efficiency.
+Lebrons journal
 
 ### Project Title
 
