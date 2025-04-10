@@ -18,15 +18,9 @@
     {
       devShells = eachSystem (pkgs: {
         default = pkgs.mkShell {
-          packages = [
-            pkgs.nodejs_23
-
-            # Alternatively, you can use a specific major version of Node.js
-
-            # pkgs.nodejs-22_x
-
-            # Use corepack to install npm/pnpm/yarn as specified in package.json
-            pkgs.corepack
+          packages = with pkgs; [
+            nodejs_23
+            pnpm
           ];
         };
       });
