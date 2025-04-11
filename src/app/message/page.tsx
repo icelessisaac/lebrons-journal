@@ -27,7 +27,7 @@ export default function Message() {
   });
 
   return (
-    <main className=" min-h-full max-h-full flex flex-col justify-start container max-w-screen-xl mx-auto">
+    <main className=" min-h-full max-h-full flex flex-col justify-start container max-w-(--breakpoint-xl) mx-auto">
       <div className="mb-6">
         <ConnectButton
           client={client}

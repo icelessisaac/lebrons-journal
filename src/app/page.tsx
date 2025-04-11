@@ -11,7 +11,7 @@ export default function Home() {
   const activeAccount = false;
 
   return (
-    <main className="p-4 pb-10 min-h-[100vh] flex items-center justify-center container max-w-screen-lg mx-auto">
+    <main className="p-4 pb-10 min-h-[100vh] flex items-center justify-center container max-w-(--breakpoint-lg) mx-auto">
       <div className="py-20">
         <Header />
         <div className="flex flex-col items-center mb-20">
@@ -30,7 +30,7 @@ export default function Home() {
               <GetAddress />
               <Link
                 href="/message"
-                className="mt-2 px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg shadow-md hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-300"
+                className="mt-2 px-4 py-3 bg-linear-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg shadow-md hover:from-blue-600 hover:to-purple-600 focus:outline-hidden focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-300"
               >
                 Go to Message Page
               </Link>
