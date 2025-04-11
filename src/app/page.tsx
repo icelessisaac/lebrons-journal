@@ -7,7 +7,8 @@ import { GetAddress } from "@/components/getAddressButton";
 import { Header } from "@/components/header";
 export default function Home() {
   // 使用 useActiveAccount 钩子来检查用户是否已连接钱包
-  const activeAccount = useActiveAccount();
+  //const activeAccount = useActiveAccount();
+  const activeAccount = false;
 
   return (
     <main className="p-4 pb-10 min-h-[100vh] flex items-center justify-center container max-w-screen-lg mx-auto">
