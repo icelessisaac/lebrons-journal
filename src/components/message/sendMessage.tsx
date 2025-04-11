@@ -12,7 +12,7 @@ export function SendMessage() {
 
   return (
     <div className="flex flex-col items-center mt-8 w-full">
-      <h1 className="text-4xl font-bold mb-6">Send Message</h1>
+      <h1 className="text-4xl font-bold mb-6">Journal</h1>
       <div className="flex flex-col gap-6 w-full max-w-lg">
         <Input
           type="text"
