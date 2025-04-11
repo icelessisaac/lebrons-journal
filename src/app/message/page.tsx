@@ -9,10 +9,14 @@ import { ReceiveMessage } from "@/components/message/receiveMessage";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { useReadContract } from "thirdweb/react";
+import { IS_DEV } from "@/lib/environment";
+import { Account } from "thirdweb/wallets";
 
 export default function Message() {
-  //const activeAccount = useActiveAccount();
-  const activeAccount = true;
+  let activeAccount: boolean | Account = true;
+  if (!IS_DEV) {
+    activeAccount = useActiveAccount();
+  }
 
   const walletAddress = activeAccount?.address;
   const {
