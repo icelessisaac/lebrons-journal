@@ -21,7 +21,7 @@ export function SendMessage() {
           onChange={(e) => setRecipient(e.target.value)}
         />
         <Textarea
-          placeholder="Message Content"
+          placeholder="Write your entry here..."
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
@@ -36,12 +36,12 @@ export function SendMessage() {
           onTransactionConfirmed={() => {
             setRecipient("");
             setContent("");
-            console.log("Message sent successfully");
+            console.log("Entry saved successfully!");
           }}
-          onTransactionSent={() => console.log("Sending message...")}
+          onTransactionSent={() => console.log("Saving new journal entry...")}
           className="px-4 py-2 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-300 transition-all duration-300"
         >
-          Send Message
+          Save New Entry
         </TransactionButton>
       </div>
     </div>
