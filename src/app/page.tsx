@@ -3,8 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { ConnectButton, useActiveAccount } from "thirdweb/react";
 import { client } from "@/server";
-
-import { GetAddress } from "@/components/getAddressButton";
 import thirdwebIcon from "@public/thirdweb.svg";
 
 export default function Home() {
@@ -24,7 +22,6 @@ export default function Home() {
           />
           {activeAccount && (
             <>
-              <GetAddress />
               <Link
                 href="/message"
                 className="mt-2 px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg shadow-md hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-300"
